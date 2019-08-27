@@ -1,0 +1,251 @@
+// Colors
+$color-primary: #c5ab78;
+$color-secondary: #445c72;
+$color-black: #000000;
+$color-grey: #cbcbcb;
+$color-white: #ffffff;
+$color-success: #a2bf8a;
+$color-warning: #eccc87;
+$color-error: #c16069;
+
+$color-primary-lightest: lighten($color-primary, 35%);
+$color-primary-lighter: lighten($color-primary, 25%);
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-darker: darken($color-primary, 30%);
+$color-primary-darkest: darken($color-primary, 40%);
+
+$color-secondary-lightest: lighten($color-secondary, 80%);
+$color-secondary-lighter: lighten($color-secondary, 50%);
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-secondary-dark: darken($color-secondary, 20%);
+$color-secondary-darker: darken($color-secondary, 25%);
+$color-secondary-darkest: darken($color-secondary, 35%);
+
+$color-grey-lightest: lighten($color-grey, 20%);
+$color-grey-lighter: lighten($color-grey, 15%);
+$color-grey-light: lighten($color-grey, 10%);
+$color-grey-dark: darken($color-grey, 20%);
+$color-grey-darker: darken($color-grey, 40%);
+$color-grey-darkest: darken($color-grey, 60%);
+
+$color-warning-lightest: lighten($color-warning, 20%);
+$color-warning-lighter: lighten($color-warning, 15%);
+$color-warning-light: lighten($color-warning, 10%);
+$color-warning-dark: darken($color-warning, 20%);
+$color-warning-darker: darken($color-warning, 40%);
+$color-warning-darkest: darken($color-warning, 60%);
+
+$color-success-lightest: lighten($color-success, 25%);
+$color-success-lighter: lighten($color-success, 20%);
+$color-success-light: lighten($color-success, 10%);
+$color-success-dark: darken($color-success, 20%);
+$color-success-darker: darken($color-success, 40%);
+$color-success-darkest: darken($color-success, 50%);
+
+$color-error-lightest: lighten($color-error, 30%);
+$color-error-lighter: lighten($color-error, 20%);
+$color-error-light: lighten($color-error, 10%);
+$color-error-dark: darken($color-error, 20%);
+$color-error-darker: darken($color-error, 30%);
+$color-error-darkest: darken($color-error, 40%);
+
+// Transitions
+$speed: 0.3s;
+$offset-animation: 100px;
+$bounce: cubic-bezier(0.17, 0.67, 0.3, 1.33);
+$power1-ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$power2-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$power3-ease-out: cubic-bezier(0.165, 0.84, 0.44, 1);
+$power4-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+$power1-ease-in: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$power2-ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$power3-ease-in: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$power4-ease-in: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$expo-ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+$expo-ease-in: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$expo-ease-in-out: cubic-bezier(1, 0, 0, 1);
+$sine-ease-out: cubic-bezier(0.39, 0.575, 0.565, 1);
+$sine-ease-in: cubic-bezier(0.47, 0, 0.745, 0.715);
+$power1-ease-in-out: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$power2-ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+$power3-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+$power4-ease-in-out: cubic-bezier(0.86, 0, 0.07, 1);
+$slow-ease-out: cubic-bezier(0.04, 1.15, 0.4, 0.99);
+$easing: $power2-ease-out;
+
+// Breakpoints
+$breakpoints: (
+  default: 0px,
+  xs: 480px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1440px
+);
+
+// Font stacks
+$font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+$font-secondary: Georgia, Times, Times New Roman, serif;
+$font-monospace: "Andale Mono", AndaleMono, monospace;
+
+// Typography
+$base-font-size: 16px;
+$base-line-unit: 24px;
+$base-line-multi: 1;
+$rem-with-px-fallback: false;
+$ritmo-unit: "rem";
+
+@include ritmo-baseline;
+
+$type-styles: (
+  default: (
+    h1: (
+      "font-size": 24px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h2: (
+      "font-size": 20px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h3: (
+      "font-size": 19px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h4: (
+      "font-size": 18px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h5: (
+      "font-size": 17px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h6: (
+      "font-size": 16px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    p: (
+      "font-size": 16px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    small: (
+      "font-size": 12px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    )
+  ),
+  md: (
+    h1: (
+      "font-size": 36px,
+      "line-height": 2,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h2: (
+      "font-size": 31px,
+      "line-height": 2,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h3: (
+      "font-size": 28px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h4: (
+      "font-size": 26px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h5: (
+      "font-size": 22px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    h6: (
+      "font-size": 18px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    p: (
+      "font-size": 16px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    ),
+    small: (
+      "font-size": 12px,
+      "line-height": 1,
+      "margin-bottom": 1,
+      "margin-top": 0,
+      "letter-spacing": normal
+    )
+  )
+);
+
+// Grid
+@include g-setup(
+  (
+    context: 12,
+    gutter-width: 24px,
+    states-classes: false,
+    classes: true
+  )
+);
+
+@each $key, $value in $breakpoints {
+  @if $key != "default" {
+    @include g-register-state(
+      $key,
+      (
+        min-width: $value
+      )
+    );
+  }
+}
+
+@include g-classes();
+
+// Paths
+$path-img: "../img/";
+$path-fonts: "../fonts/";
+
+// Debug
+$debug-breakpoints: false;
+$debug-rhythm: false;
+$debug-css: false;
