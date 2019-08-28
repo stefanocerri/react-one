@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { getNavigationPrimary } from "../api/Services";
 import { NavLink } from "react-router-dom";
 import Loader from "../components/Loader";
+import { getSlug } from "../utility/GetSlug";
 
 type Items = {
   url: string;
@@ -19,7 +20,7 @@ export default class NavigationPrimary extends Component<
 > {
   async componentDidMount() {
     let data = await getNavigationPrimary();
-    console.log(data);
+
     this.setState({
       data: data
     });
@@ -32,7 +33,7 @@ export default class NavigationPrimary extends Component<
           <ul className="">
             {this.state.data.map(item => (
               <li>
-                <NavLink to={item.url}>{item.title}</NavLink>
+                <NavLink to={getSlug(item.url)}>{item.title}</NavLink>
               </li>
             ))}
           </ul>
