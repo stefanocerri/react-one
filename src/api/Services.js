@@ -66,7 +66,7 @@ export const getNavigationPrimary = async () => {
 export const getNavigationPrimary = async () => {
   var url = "http://react-one.com:8888/wp-json/menus/v1/menus";
 
-  var result = await fetch(url, { method: "get" })
+  var result = fetch(url, { method: "get" })
     .then(function(response) {
       return response.json();
     })
